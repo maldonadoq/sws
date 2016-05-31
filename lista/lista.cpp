@@ -53,7 +53,7 @@ void lista:: print()
     temp=primero;
     while(temp != ultimo->sig){
         cout << temp->_dato << endl;
-        temp = ultimo->sig;
+        temp = temp->sig;
     }
 }
 
@@ -62,10 +62,8 @@ int main()
 {
     lista sws;
     sws.inser(4);
+    sws.inser(4);
     sws.print();
-    lista w;
-    w.inser(3);
-    w.print();
     return 0;
 }
 
